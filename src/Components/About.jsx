@@ -10,7 +10,7 @@ import React from "react";
  * About background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a image you
@@ -24,19 +24,20 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "As a Real-time Graphics Artist & Creative Technologist, I specialize in pioneering immersive visual experiences and technological innovations. My expertise in real-time graphics, virtual reality, and interactive installations pushes the boundaries of creativity and technology, setting new industry standards and captivating audiences.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
+
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Real-time Rendering",
+  "Virtual Reality (VR) Development",
+  "3D Modeling and Animaton",
+  "Shader Programming",
+  "Generative Art",
+  "Creative Coding (e.g., Processing, OpenFrameworks)",
 ];
 
 /**
@@ -44,8 +45,7 @@ const skillsList = [
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
  */
-const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+const detailOrQuote = "Art challenges technology, and technology inspires the art. – John Lasseter";
 
 const About = () => {
   return (
@@ -58,6 +58,7 @@ const About = () => {
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
+          // textDecorationStyle: "double",
         }}
       >
         <h2>About Myself</h2>
@@ -77,7 +78,9 @@ const About = () => {
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p className="large" style={{ padding: "2rem 2rem 0", fontSize: 20 }}>
+          {detailOrQuote}
+        </p>
       </div>
     </section>
   );

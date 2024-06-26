@@ -19,9 +19,8 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
 
-const imageAltText = "desktop with books and laptop";
+import ImageAttribution from "./ImageAttribution";
 
 /**
  * Project list
@@ -29,6 +28,7 @@ const imageAltText = "desktop with books and laptop";
  * An array of objects that will be used to display for your project
  * links section. Below is a sample, update to reflect links you'd like to highlight.
  */
+
 const projectList = [
   {
     title: "10 Things To Know About Azure Static Web Apps 🎉",
@@ -60,13 +60,11 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
+      <div
+        style={{ display: "flex", flexDirection: "row", paddingTop: "3rem", marginLeft: "1rem" }}
+      >
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
+          <ImageAttribution />
         </div>
         <div className="container">
           {projectList.map((project) => (
